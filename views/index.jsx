@@ -10,17 +10,19 @@ const Page = () =>
 
       {/* Style Sheets */}
       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous" />
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous" />
 
     </head>
     <body>
-      <div className="jumbotron">
-        <h1 className="display-4">Hello, world!</h1>
-        <p className="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
-        <hr className="my-4" />
-        <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-        <a className="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+      <div className="container">
+        <div className="jumbotron">
+          <h1 className="display-4"> <i class="fas fa-book"></i> Reading List</h1>
+          <hr className="my-4" />
+          <p className="lead">This is a simple app to help you keep track of all the Books that you are reading in a list. Please choose one of the following options below. </p>
+          <a class="btn btn-outline-success btn-block" href="/addBook" role="button"><i class="fas fa-book-open"></i> Add Book</a>
+          <a class="btn btn-outline-primary btn-block" href="/list" role="button"><i class="fas fa-th-list"></i> View List</a>
+        </div>
       </div>
-
 
       {/* Java Scripts */}
       <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
