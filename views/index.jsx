@@ -19,7 +19,7 @@ const Page = () =>
           <h1 className="display-4"> <i className ="fas fa-book"></i> Reading List</h1>
           <hr className="my-4" />
           <p className="lead">This is a simple app to help you keep track of all the Books that you are reading in a list. Please choose one of the following options below. </p>
-          <a className="btn btn-outline-success btn-block" href="/addBook" role="button"><i className="fas fa-book-open"></i> Add Book</a>
+          <a className="btn btn-outline-success btn-block" id="addBook" href="/addBook" role="button"><i className="fas fa-book-open"></i> Add Book</a>
           <a className="btn btn-outline-primary btn-block" href="/list" role="button"><i className="fas fa-th-list"></i> View List</a>
         </div>
       </div>
