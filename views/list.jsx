@@ -16,8 +16,9 @@ const List = () =>
 
     </head>
     <body>
-      {/* Jumbotron */}
+
       <div className="container">
+        {/* Jumbotron */}
         <div className="jumbotron">
           <h1 className="display-4"> <i className="far fa-list-alt"></i> Book List</h1>
           <hr className="my-2" />

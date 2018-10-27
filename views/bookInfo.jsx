@@ -15,15 +15,15 @@ const BookInfo = () =>
 
     </head>
     <body>
-      {/* Jumbotron */}
       <div className="container">
+        {/* Jumbotron */}
         <div className="jumbotron">
           <h1 className="display-4"> <i className="fas fa-align-left"></i> Book Information</h1>
           <p className="lead">Please plug in the following books information below!</p>
           <hr className="my-2" />
-        
-        {/* Book Information Inputs */}
-        <Form />
+
+          {/* Book Information Inputs */}
+          <Form />
         </div>
       </div>
 
@@ -32,7 +32,7 @@ const BookInfo = () =>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossOrigin="anonymous"></script>
       <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossOrigin="anonymous"></script>
 
-      </body>
-    </html>
+    </body>
+  </html>
 
 module.exports = BookInfo
