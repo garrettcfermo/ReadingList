@@ -14,7 +14,6 @@ document.querySelector('#submitBook').addEventListener('click', event =>{
     })
   })
   .then(r => {
-    console.log(document.querySelector('#bookName').value)
     window.location='/list'
 
   })

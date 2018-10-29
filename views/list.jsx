@@ -25,7 +25,7 @@ const List = props =>
 
           {/* List of Books */}
           {props.list.map(book =>
-            <Book title={book.title} author={book.author} pages={book.pages} currentPage={book.currentPage} />
+            <Book title={book.title} author={book.author} pages={book.pages} currentPage={book.currentPage} isRead={book.isRead} />
           )}
           <a className="btn btn-outline-secondary btn-block" href="/" role="button"><i className="fas fa-home"></i> Back Home</a>
         </div>

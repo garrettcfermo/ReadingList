@@ -1,7 +1,7 @@
 const React = require('react')
 const Fragment = React.Fragment
 
-const Form = () =>
+const Form = props =>
   <Fragment>
     <form>
       <div className="form-group">
@@ -21,12 +21,13 @@ const Form = () =>
         <input type="text" className="form-control" id="bookCurPage" placeholder="105" />
       </div>
       <div className="form-check">
-        <input className="form-check-input" type="checkbox" value="" id="bookIsRead" />
+        <input className="form-check-input" type="checkbox" id="bookIsRead" checked={!!props.isRead} />
         <label className="form-check-label" htmlFor="bookIsRead"> Read this Book Before</label>
       </div>
       <hr className="my-2" />
     </form>
     <a className="btn btn-outline-success btn-block" id="submitBook" href="/list"  role="button"><i className="fas fa-book-open"></i> Submit Book</a>
+    <a className="btn btn-outline-primary btn-block" href="/list" role="button"><i className="fas fa-th-list"></i> View List</a>
     <a className="btn btn-outline-secondary btn-block" href="/" role="button"><i className="fas fa-home"></i> Back Home</a>
   </Fragment>
 
