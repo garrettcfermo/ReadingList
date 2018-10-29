@@ -16,7 +16,7 @@ app.use(bodyparser.urlencoded({ extended: true }))
 // HTML/API Routes
 
 require('./routes/htmlroutes')(app)
-
+require('./routes/booksRoutes')(app)
 
 
 app.listen(PORT, () => console.log(`http://localhost:${PORT}`))

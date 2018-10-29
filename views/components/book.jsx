@@ -1,18 +1,18 @@
 const React = require('react')
 const Fragment = React.Fragment
 
-const Book = () =>
+const Book = props =>
   <Fragment>
-    <div className="card mb-3">
-      <div className="card-header">
-        Ready Player One
-              <a href="#" className="btn btn-outline-danger btn-sm float-right">Delete</a>
-        <a href="#" className="btn btn-outline-secondary btn-sm float-right">Edit</a>
+    <div className="card mb-3" key={props.title}>
+      <div className="card-header" id="bookName">
+        {props.title}
+        <a href="#" id="deleteBTN" className="btn btn-outline-danger btn-sm float-right">Delete</a>
+        <a href="#" id="editBTN" className="btn btn-outline-secondary btn-sm float-right">Edit</a>
       </div>
       <ul className="list-group list-group-flush">
-        <li className="list-group-item">Author: Garrett Fermo</li>
-        <li className="list-group-item">Pages: 385</li>
-        <li className="list-group-item">Current Page: 115</li>
+        <li id="bookAuthor" className="list-group-item">Author: {props.author}</li>
+        <li id="bookPages" className="list-group-item">Pages: {props.pages}</li>
+        <li id="bookCurPage" className="list-group-item">Current Page: {props.currentPage}</li>
       </ul>
     </div>
   </Fragment>

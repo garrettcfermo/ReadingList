@@ -26,7 +26,7 @@ const Form = () =>
       </div>
       <hr className="my-2" />
     </form>
-    <a className="btn btn-outline-success btn-block" id="submitBook" href="/list" role="button"><i className="fas fa-book-open"></i> Submit Book</a>
+    <a className="btn btn-outline-success btn-block" id="submitBook" href="/list"  role="button"><i className="fas fa-book-open"></i> Submit Book</a>
     <a className="btn btn-outline-secondary btn-block" href="/" role="button"><i className="fas fa-home"></i> Back Home</a>
   </Fragment>
 
