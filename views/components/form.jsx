@@ -6,7 +6,7 @@ const Form = props =>
     <form>
       <div className="form-group">
         <label htmlFor="bookName">Book Name</label>
-        <input type="text" className="form-control" id="bookName" placeholder="Ready Player One" />
+        <input type="text" className="form-control" id="bookName" placeholder={props.title ? '' : "Ready Player One"} value={props.title ? props.title : ''} />
       </div>
       <div className="form-group">
         <label htmlFor="bookAuthor">Book Author</label>

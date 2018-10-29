@@ -1,7 +1,7 @@
 const React = require('react')
 const Form = require('./components/form')
 
-const BookInfo = () =>
+const BookInfo = props =>
   <html lang="en">
     <head>
       <meta charSet="UTF-8" />
@@ -23,7 +23,7 @@ const BookInfo = () =>
           <hr className="my-2" />
 
           {/* Book Information Inputs */}
-          <Form />
+          <Form title={props.title} author={props.author} pages={props.pages} currentPage={props.currentPage} isRead={props.isRead}/>
         </div>
       </div>
 
